@@ -1,14 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import i18next from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import LanguageDetector from 'i18next-browser-languagedetector'
+import LanguageDetector from 'i18next-browser-languagedetector' // TODO: Might be able to remove if it is only being grabbed from the path
 import HttpApi from 'i18next-http-backend'
 
 import App from './App'
-import { Dashboard, About } from './Pages';
-
 
 i18next
   .use(initReactI18next)
@@ -18,7 +15,7 @@ i18next
     supportedLngs: ['en', 'ja'],
     fallbackLng: 'en',
     detection: {
-      order: ['path']
+      order: ['path'] // I am trying to get this to work with only the path and not rely on localstorage or cookies. Later on I want to also grab from the language settings of the browser.
     },
     backend: {
       loadPath: '/assets/locales/{{lng}}/translation.json'
@@ -29,15 +26,6 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
   <StrictMode>
-    <Router>
-      <Routes>
-        <Route path='/' element={<App />}>
-          <Route index element={<Dashboard />} />
-          <Route path=':lang' element={<Dashboard />}>  {/* Something like this? */}
-            <Route path='about' element={<About />} />
-          </Route>
-        </Route>
-      </Routes>
-    </Router>
+    <App />
   </StrictMode>
 )

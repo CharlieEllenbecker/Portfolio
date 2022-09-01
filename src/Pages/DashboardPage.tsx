@@ -1,7 +1,6 @@
-import { Outlet } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
-const Dashboard = () => {
+const DashboardPage = () => {
   const { t } = useTranslation()
 
   return (
@@ -9,10 +8,8 @@ const Dashboard = () => {
       <h2>
         {t('welcome')}
       </h2>
-
-      {/* <Outlet /> */}
     </div>
   )
 }
 
-export default Dashboard
+export default DashboardPage

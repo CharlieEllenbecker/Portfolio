@@ -1,13 +1,16 @@
-import { Outlet } from 'react-router-dom'
-import i18next from 'i18next'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+
+import AppRoutes from './Components/AppRoutes'
 
 const App = () => {
-  const lang = i18next.language
-
   return (
-    <div className='app'>
-      <Outlet />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/*' element={<AppRoutes />} />
+        <Route path={'/en/*'} element={<AppRoutes />} />
+        <Route path={'/ja/*'} element={<AppRoutes />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
