@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-const DashboardPage = () => {
+const Dashboard = () => {
   const { t } = useTranslation()
 
   return (
@@ -12,4 +12,4 @@ const DashboardPage = () => {
   )
 }
 
-export default DashboardPage
+export default Dashboard

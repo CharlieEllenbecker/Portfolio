@@ -13,7 +13,7 @@ i18next
   .use(HttpApi)
   .init({
     supportedLngs: ['en', 'ja'],
-    fallbackLng: window.navigator.language,
+    fallbackLng: window.navigator.language.substring(0, window.navigator.language.indexOf('-')),
     detection: {
       order: ['path', 'navigator']
     },
