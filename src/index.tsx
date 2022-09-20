@@ -13,9 +13,9 @@ i18next
   .use(HttpApi)
   .init({
     supportedLngs: ['en', 'ja'],
-    fallbackLng: window.navigator.language.substring(0, window.navigator.language.indexOf('-')),
+    fallbackLng: 'en', // TODO: Eventually change this to Japanese
     detection: {
-      order: ['path', 'navigator']
+      order: ['path']
     },
     backend: {
       loadPath: '/assets/locales/{{lng}}/translation.json'
