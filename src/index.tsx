@@ -15,7 +15,7 @@ i18next
     supportedLngs: ['en', 'ja'],
     fallbackLng: 'en', // TODO: Eventually change this to Japanese
     detection: {
-      order: ['path']
+      order: ['path', 'navigator']
     },
     backend: {
       loadPath: '/assets/locales/{{lng}}/translation.json'

@@ -8,8 +8,6 @@ import { useTranslation } from 'react-i18next'
 const NavbarHeader = () => {
   const { t } = useTranslation()
 
-  // TODO: Better way of handling the refreshes of the page due to the language change
-
   return (
     <Navbar bg="light" expand="lg">
       <Container>
