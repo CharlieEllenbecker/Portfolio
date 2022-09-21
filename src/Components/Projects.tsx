@@ -1,18 +1,18 @@
 import Container from 'react-bootstrap/Container'
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next"
 
 import '../styles.css'
 
-const Dashboard = () => {
+const Projects = () => {
   const { t } = useTranslation()
 
   return (
-    <Container className="welcome">
+    <Container className="projects">
       <h2>
-        {t('welcome')}
+        {t('projects')}
       </h2>
     </Container>
   )
 }
 
-export default Dashboard
+export default Projects
