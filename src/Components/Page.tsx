@@ -1,7 +1,6 @@
 import NavbarHeader from './NavbarHeader'
 import Dashboard from './Dashboard'
 import About from './About'
-import History from './History'
 import Projects from './Projects'
 
 const Page = () => {
@@ -11,7 +10,6 @@ const Page = () => {
       <NavbarHeader />
       <Dashboard />
       <About />
-      <History />
       <Projects />
     </>
   )

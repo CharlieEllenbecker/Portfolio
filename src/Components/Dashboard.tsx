@@ -8,9 +8,9 @@ const Dashboard = () => {
 
   return (
     <Container className="welcome">
-      <h2>
+      <h1>
         {t('welcome')}
-      </h2>
+      </h1>
     </Container>
   )
 }

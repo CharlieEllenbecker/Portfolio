@@ -11,16 +11,13 @@ const NavbarHeader = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">{t('charlie_ellenbecker')}</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <NavDropdown title={t('language')} id="basic-nav-dropdown" >
-              <NavDropdown.Item href="en">English</NavDropdown.Item>
-              <NavDropdown.Item href="ja">日本語</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
+        <Navbar.Brand>{t('charlie_ellenbecker')}</Navbar.Brand>
+        <Nav className="ms-auto">
+          <NavDropdown title={t('language')} id="basic-nav-dropdown">
+            <NavDropdown.Item href="en">English</NavDropdown.Item>
+            <NavDropdown.Item href="ja">日本語</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
       </Container>
     </Navbar>
   )

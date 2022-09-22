@@ -1,8 +1,16 @@
 import Card from 'react-bootstrap/Card'
 
-const HistoryItem = () => {
+interface ProjectProps {
+  title: string,
+  subTitle: string,
+  text: string
+}
+
+// { title, subTitle, text }: ProjectProps
+
+const Project = () => {
   return (
-    <Card>
+    <Card className="project">
       <Card.Header>
         <Card.Title>React</Card.Title>
         <Card.Subtitle>Date here</Card.Subtitle>
@@ -16,4 +24,4 @@ const HistoryItem = () => {
   )
 }
 
-export default HistoryItem
+export default Project
