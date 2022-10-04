@@ -13,7 +13,7 @@ i18next
   .use(HttpApi)
   .init({
     supportedLngs: ['en', 'ja'],
-    fallbackLng: 'en', // TODO: Eventually change this to Japanese
+    fallbackLng: 'en',
     detection: {
       order: ['path', 'navigator']
     },
