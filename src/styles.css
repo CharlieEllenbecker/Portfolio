@@ -1,7 +1,3 @@
-.dropdown {
-  float: right;
-}
-
 .title {
   margin-bottom: 30px;
 }
@@ -37,4 +33,20 @@
 .project {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.resources {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: aquamarine;
+}
+
+.contact {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: antiquewhite;
 }

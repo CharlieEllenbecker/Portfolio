@@ -1,15 +1,15 @@
 
+import '../styles.css'
+
 const Contact = () => {
   return (
-    <>
-      <div>
-        <div>
-          <h2>
-            Contact
-          </h2>
-        </div>
+    <div className="contact">
+      <div className="title">
+        <h2>
+          Contact
+        </h2>
       </div>
-    </>
+    </div>
   )
 }
 
