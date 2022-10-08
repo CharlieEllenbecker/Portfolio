@@ -6,17 +6,15 @@ const Dashboard = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="dashboard">
-      <div className="welcome">
+    <div id="dashboard">
+      <div id="about">
         <h1>
           {t('welcome')}
         </h1>
-      </div>
-      <div className="about">
         <h2 className="title">
           {t('about')}
         </h2>
-        <p className="about-paragraph">
+        <p id="about-paragraph">
           {t('about_paragraph')}
         </p>
       </div>

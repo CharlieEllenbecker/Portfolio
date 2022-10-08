@@ -4,15 +4,17 @@ import NavbarHeader from './NavbarHeader'
 import Projects from './Projects'
 import Resources from './Resources'
 
+import '../styles.css'
+
 const Portfolio = () => {
   return (
-    <>
+    <div id="portfolio">
       <NavbarHeader />
       <Dashboard />
       <Projects />
-      <Resources />
+      {/* <Resources /> */}
       <Contact />
-    </>
+    </div>
   )
 }
 

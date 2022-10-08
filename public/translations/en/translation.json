@@ -4,5 +4,7 @@
     "welcome": "Welcome",
     "about": "I am a full stack software engineer.",
     "about_paragraph": "About me...",
-    "projects": "Projects"
+    "projects": "Projects",
+    "project-title-one": "Flashcard App",
+    "project-description-one": "Flashcard study web app. Create decks, cards, and folders. Basic CRUD app."
 }

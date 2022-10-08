@@ -1,26 +1,41 @@
-import Card from 'react-bootstrap/Card'
+import { useTranslation } from 'react-i18next'
+import Tag from './Tag';
 
-interface ProjectProps {
-  title: string,
-  subTitle: string,
-  text: string
+interface Tag {
+  name: string
 }
 
-// { title, subTitle, text }: ProjectProps
+interface ProjectProps {
+  titleRef: string,
+  descriptionRef: string,
+  link: string,
+  tags: Array<Tag>
+}
 
-const Project = () => {
+const Project = ({ titleRef, descriptionRef, link, tags }: ProjectProps) => {
+  const { t } = useTranslation();
+
   return (
-    <Card className="project">
-      <Card.Header>
-        <Card.Title>React</Card.Title>
-        <Card.Subtitle>Date here</Card.Subtitle>
-      </Card.Header>
-      <Card.Body>
-        <Card.Text>
-          Front end experience with React Javascript and React Typescript
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <div className="project">
+      <div className="project-header">
+        <div className="project-title">
+          <h3>
+            {t(titleRef)}
+          </h3>
+        </div>
+        <div className="project-link">
+          <a href={link} target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div className="project-description">
+        <p>
+          {t(descriptionRef)}
+        </p>
+      </div>
+      <div className="tags">
+        {tags.map(t => <Tag name={t.name} />)}
+      </div>
+    </div>
   )
 }
 

@@ -18,7 +18,7 @@ i18next
       order: ['path', 'navigator']
     },
     backend: {
-      loadPath: '/assets/locales/{{lng}}/translation.json'
+      loadPath: '/translations/{{lng}}/translation.json'
     }
   })
 

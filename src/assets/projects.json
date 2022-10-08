@@ -1,0 +1,21 @@
+[
+  {
+    "titleRef": "project-title-one",
+    "descriptionRef": "project-description-one",
+    "link": "https://github.com/CharlieEllenbecker/Flashcard-App",
+    "tags": [
+      {
+        "name": "Node.js"
+      },
+      {
+        "name": "React.js"
+      },
+      {
+        "name": "Express.js"
+      },
+      {
+        "name": "MongoDB"
+      }
+    ]
+  }
+]
