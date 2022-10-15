@@ -1,17 +1,51 @@
-#root {
-  
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f5;
+}
+
+#header-title {
+  justify-content: center;
+}
+
+#header-title-button {
+  border: none;
+  background-color: #f7f7f5;
+}
+
+#header-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.header-button {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #e0e0de;
+  background-color: #fafaf7;
+}
+
+.header-button:hover {
+  background-color: #cccccc;
+  border-color: #727272;
 }
 
 .title {
   margin-bottom: 30px;
 }
 
-#about {
+#dashboard-about {
   padding: 50px;
   background-color: aquamarine;
 }
 
-#about-paragraph {
+#dashboard-about-paragraph {
   font-size: large;
 }
 
@@ -48,11 +82,11 @@
   margin-bottom: 10px;
 }
 
-.project-title {
+.project-header-title {
   padding-right: 10px;
 }
 
-.project-link {
+.project-header-link {
   margin-left: auto;
   margin-top: 10px;
   margin-right: 20px;
@@ -62,7 +96,7 @@
   margin-bottom: 10px;
 }
 
-.tags {
+.project-tags {
   display: flex;
   margin-top: auto;
   flex-wrap: wrap-reverse;
@@ -79,6 +113,11 @@
   background-color: #fafaf7;
 }
 
+.tag:hover {
+  cursor: default;
+  background-color: #ffefef;
+}
+
 #resources {
   padding: 50px;
   background-color: aquamarine;
@@ -86,7 +125,7 @@
 
 #footer {
   flex-direction: column;
-  padding: 20px;
+  padding: 20px; /* Needed? */
   background-color: antiquewhite;
 }
 

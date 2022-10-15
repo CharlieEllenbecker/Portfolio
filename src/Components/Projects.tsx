@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div id="project-section">
       <h2 className="title">
-        {t('projects-section')}
+        {t('projects-title')}
       </h2>
       <div id="projects">
         {projects.map(p => <Project titleRef={p.titleRef} descriptionRef={p.descriptionRef} link={p.link} tags={p.tags} />)}

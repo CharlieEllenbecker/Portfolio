@@ -7,14 +7,14 @@ const Dashboard = () => {
 
   return (
     <div id="dashboard">
-      <div id="about">
+      <div id="dashboard-about">
         <h1>
-          {t('welcome-section')} {/* TODO: fix the naming conventions between the css files, the sections of portfolio page, and the translation files */}
+          {t('charlie-ellenbecker')} {/* TODO: fix the naming conventions between the css files, the sections of portfolio page, and the translation files */}
         </h1>
         <h2 className="title">
-          {t('about-section')}
+          {t('about-title')}
         </h2>
-        <p id="about-paragraph">
+        <p id="dashboard-about-paragraph">
           {t('about-paragraph')}
         </p>
       </div>

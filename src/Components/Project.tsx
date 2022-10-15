@@ -18,12 +18,12 @@ const Project = ({ titleRef, descriptionRef, link, tags }: ProjectProps) => {
   return (
     <div className="project">
       <div className="project-header">
-        <div className="project-title">
+        <div className="project-header-title">
           <h3>
             {t(titleRef)}
           </h3>
         </div>
-        <div className="project-link">
+        <div className="project-header-link">
           <a href={link} target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
@@ -32,7 +32,7 @@ const Project = ({ titleRef, descriptionRef, link, tags }: ProjectProps) => {
           {t(descriptionRef)}
         </p>
       </div>
-      <div className="tags">
+      <div className="project-tags">
         {tags.map(t => <Tag name={t.name} />)}
       </div>
     </div>
