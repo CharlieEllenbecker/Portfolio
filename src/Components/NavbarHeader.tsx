@@ -14,7 +14,7 @@ const NavbarHeader = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href={`/${lang}`}>{t('charlie_ellenbecker')}</Navbar.Brand>
+        <Navbar.Brand href={`/${lang}`}>{t('charlie-ellenbecker')}</Navbar.Brand>
         <Nav className="ms-auto">
           <NavDropdown title={t('language')} id="basic-nav-dropdown">
             <NavDropdown.Item href="/en">English</NavDropdown.Item>

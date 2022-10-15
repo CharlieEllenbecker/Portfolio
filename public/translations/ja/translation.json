@@ -1,8 +1,12 @@
 {
     "language": "言語",
-    "charlie_ellenbecker": "チャーリー・エレンベッカー",
-    "welcome": "いらっしゃいませ",
-    "about": "私はフルスタックのソフトウェアのこうがくです。",
-    "about_paragraph": "私について",
-    "projects": "事業"
+    "charlie-ellenbecker": "チャーリー・エレンベッカー",
+    "welcome-section": "いらっしゃいませ",
+    "about-section": "私はフルスタックのソフトウェアのこうがくです。",
+    "about-paragraph": "私について",
+    "projects-section": "事業",
+    "project-title-one": "Flashcard App",
+    "project-description-one": "Flashcard study web app. Create decks, cards, and folders. Basic CRUD app.",
+    "project-title-two": "Second App",
+    "project-description-two": "Second web app."
 }

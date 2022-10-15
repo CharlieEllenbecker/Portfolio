@@ -1,10 +1,12 @@
 {
     "language": "Language",
-    "charlie_ellenbecker": "Charlie Ellenbecker",
-    "welcome": "Welcome",
-    "about": "I am a full stack software engineer.",
-    "about_paragraph": "About me...",
-    "projects": "Projects",
+    "charlie-ellenbecker": "Charlie Ellenbecker",
+    "welcome-section": "Welcome",
+    "about-section": "I am a full stack software engineer.",
+    "about-paragraph": "About me...",
+    "projects-section": "Projects",
     "project-title-one": "Flashcard App",
-    "project-description-one": "Flashcard study web app. Create decks, cards, and folders. Basic CRUD app."
+    "project-description-one": "Flashcard study web app. Create decks, cards, and folders. Basic CRUD app.",
+    "project-title-two": "Second App",
+    "project-description-two": "Second web app."
 }

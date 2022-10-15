@@ -9,13 +9,13 @@ const Dashboard = () => {
     <div id="dashboard">
       <div id="about">
         <h1>
-          {t('welcome')}
+          {t('welcome-section')} {/* TODO: fix the naming conventions between the css files, the sections of portfolio page, and the translation files */}
         </h1>
         <h2 className="title">
-          {t('about')}
+          {t('about-section')}
         </h2>
         <p id="about-paragraph">
-          {t('about_paragraph')}
+          {t('about-paragraph')}
         </p>
       </div>
     </div>

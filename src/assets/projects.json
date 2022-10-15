@@ -17,5 +17,21 @@
         "name": "MongoDB"
       }
     ]
+  },
+  {
+    "titleRef": "project-title-two",
+    "descriptionRef": "project-description-two",
+    "link": "https://github.com/CharlieEllenbecker/Flashcard-App",
+    "tags": [
+      {
+        "name": "Node.js"
+      },
+      {
+        "name": "React.js"
+      },
+      {
+        "name": "Express.js"
+      }
+    ]
   }
 ]

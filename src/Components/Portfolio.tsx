@@ -1,4 +1,4 @@
-import Contact from './Contact'
+import Footer from './Footer'
 import Dashboard from './Dashboard'
 import NavbarHeader from './NavbarHeader'
 import Projects from './Projects'
@@ -13,7 +13,7 @@ const Portfolio = () => {
       <Dashboard />
       <Projects />
       {/* <Resources /> */}
-      <Contact />
+      <Footer />
     </div>
   )
 }
