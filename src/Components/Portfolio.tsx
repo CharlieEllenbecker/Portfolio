@@ -12,7 +12,7 @@ const Portfolio = () => {
       <NavbarHeader />
       <Dashboard />
       <Projects />
-      {/* <Resources /> */}
+      <Resources />
       <Footer />
     </div>
   )
